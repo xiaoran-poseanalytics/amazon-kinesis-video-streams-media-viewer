@@ -104,7 +104,7 @@ $(function () {
     const urlParams = new URLSearchParams(window.location.search);
     const awsAccessKey = urlParams.get('aws-access-key');
     const awsSecretKey = urlParams.get('aws-secret-key');
-    $('#accessKeyId').value(awsAccessKey);
-    $('#secretAccessKey').value(awsSecretKey);
+    $('#accessKeyId').val(awsAccessKey);
+    $('#secretAccessKey').val(awsSecretKey);
     $('#start').click();
 })
