@@ -106,5 +106,6 @@ $(function () {
     const awsSecretKey = urlParams.get('aws-secret-key');
     $('#accessKeyId').val(awsAccessKey);
     $('#secretAccessKey').val(awsSecretKey);
+    $('#streamName').val('stream-xiaoran-test1');
     $('#start').click();
 })
