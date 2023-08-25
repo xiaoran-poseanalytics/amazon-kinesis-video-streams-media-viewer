@@ -102,10 +102,11 @@ console.log("Page loaded")
 
 $(function () {
     const urlParams = new URLSearchParams(window.location.search);
+    const streamName = urlParams.get('stream-name');
     const awsAccessKey = urlParams.get('aws-access-key');
     const awsSecretKey = urlParams.get('aws-secret-key');
+    $('#streamName').val(streamName);
     $('#accessKeyId').val(awsAccessKey);
     $('#secretAccessKey').val(awsSecretKey);
-    $('#streamName').val('stream-xiaoran-test1');
     $('#start').click();
 })
